@@ -23,7 +23,7 @@ public class ProductGet {
 			Product product = new Product();
 			product.setId_sp(rs.getLong("Id_SP"));
 			product.setNameproduct(rs.getString("NameProduct"));
-			product.setPrice(rs.getLong("Price"));
+			product.setPrice(rs.getDouble("Price"));
 			product.setImage(rs.getBytes("Image"));
 			product.setCompanyid(rs.getLong("CompanyId"));
 			product.setDate(rs.getDate("Date"));
@@ -59,7 +59,7 @@ public class ProductGet {
 
 			product.setId_sp(rs.getLong("Id_SP"));
 			product.setNameproduct(rs.getString("NameProduct"));
-			product.setPrice(rs.getLong("Price"));
+			product.setPrice(rs.getDouble("Price"));
 			product.setImage(rs.getBytes("Image"));
 			product.setCompanyid(rs.getLong("CompanyId"));
 			product.setDate(rs.getDate("Date"));
@@ -83,7 +83,7 @@ public class ProductGet {
 
 			product.setId_sp(rs.getLong("Id_SP"));
 			product.setNameproduct(rs.getString("NameProduct"));
-			product.setPrice(rs.getLong("Price"));
+			product.setPrice(rs.getDouble("Price"));
 			product.setImage(rs.getBytes("Image"));
 			product.setCompanyid(rs.getLong("CompanyId"));
 			product.setDate(rs.getDate("Date"));
@@ -107,7 +107,7 @@ public class ProductGet {
 
 			product.setId_sp(rs.getLong("Id_SP"));
 			product.setNameproduct(rs.getString("NameProduct"));
-			product.setPrice(rs.getLong("Price"));
+			product.setPrice(rs.getDouble("Price"));
 			product.setImage(rs.getBytes("Image"));
 			product.setCompanyid(rs.getLong("CompanyId"));
 			product.setDate(rs.getDate("Date"));
@@ -132,7 +132,7 @@ public class ProductGet {
 
 			product.setId_sp(rs.getLong("Id_SP"));
 			product.setNameproduct(rs.getString("NameProduct"));
-			product.setPrice(rs.getLong("Price"));
+			product.setPrice(rs.getDouble("Price"));
 			product.setImage(rs.getBytes("Image"));
 			product.setCompanyid(rs.getLong("CompanyId"));
 			product.setDate(rs.getDate("Date"));
@@ -155,7 +155,7 @@ public class ProductGet {
 
 			product.setId_sp(rs.getLong("Id_SP"));
 			product.setNameproduct(rs.getString("NameProduct"));
-			product.setPrice(rs.getLong("Price"));
+			product.setPrice(rs.getDouble("Price"));
 			product.setImage(rs.getBytes("Image"));
 			product.setCompanyid(rs.getLong("CompanyId"));
 			product.setDate(rs.getDate("Date"));
@@ -178,7 +178,7 @@ public class ProductGet {
 		while (rs.next()) {
 			product.setId_sp(rs.getLong("Id_SP"));
 			product.setNameproduct(rs.getString("NameProduct"));
-			product.setPrice(rs.getLong("Price"));
+			product.setPrice(rs.getDouble("Price"));
 			product.setImage(rs.getBytes("Image"));
 			product.setCompanyid(rs.getLong("CompanyId"));
 			product.setDate(rs.getDate("Date"));
