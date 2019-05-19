@@ -1,15 +1,15 @@
 package model;
 
-public class Detail_Oder {
+public class Detail_Order {
 	private long id;
 	private long id_Oder;
 	private long product_id;
 	private long quantity;
 	private long magio_hang;
-	public Detail_Oder() {
+	public Detail_Order() {
 		
 	}
-	public Detail_Oder(long id, long oder_id, long product_id, long quantity, long magio_hang) {
+	public Detail_Order(long id, long oder_id, long product_id, long quantity, long magio_hang) {
 		super();
 		this.id = id;
 		this.id_Oder = oder_id;
