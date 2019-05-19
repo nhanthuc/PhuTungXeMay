@@ -7,16 +7,19 @@ public class Oders {
 	private long custumer_id;
 	private double total_money;
 	private Date date;
+	private String status;
 	public Oders() {
 	}
-	public Oders(long id_oder, long custumer_id, double total_money, Date date, long ma_gio_hang) {
+	
+	public Oders(long id_oder, long custumer_id, double total_money, Date date, String status) {
 		super();
 		this.id_oder = id_oder;
 		this.custumer_id = custumer_id;
 		this.total_money = total_money;
 		this.date = date;
-		this.ma_gio_hang = ma_gio_hang;
+		this.status = status;
 	}
+
 	public long getId_oder() {
 		return id_oder;
 	}
@@ -41,11 +44,12 @@ public class Oders {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-	public long getMa_gio_hang() {
-		return ma_gio_hang;
+	
+	public String getStatus() {
+		return status;
 	}
-	public void setMa_gio_hang(long ma_gio_hang) {
-		this.ma_gio_hang = ma_gio_hang;
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	private long ma_gio_hang;
 }

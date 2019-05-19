@@ -12,7 +12,7 @@ import model.User;
 public class UserGet {
 	 public ArrayList<User> getListUser() throws SQLException {
 	        Connection connection = ConnectToDatabase.getConnecttion();
-	        String sql = "SELECT * FROM users";
+	        String sql = "SELECT * FROM uses";
 	        PreparedStatement ps = connection.prepareCall(sql);
 	        ResultSet rs = ps.executeQuery();
 	        ArrayList<User> list = new ArrayList<>();
@@ -20,9 +20,13 @@ public class UserGet {
 	            User user = new User();
 	           user.setIduse(rs.getLong("IdUse"));
 	           user.setUsename(rs.getString("UseName"));
-	           user.setMail(rs.getString("user_email"));
+	           user.setMail(rs.getString("Mail"));
 	           user.setPassword(rs.getString("Password"));
 	           user.setSdt(rs.getString("SDT"));
+	           user.setGioitinh(rs.getNString("Gioi_tinh"));
+	           user.setDia_chi(rs.getString("Dia_Chi"));
+	           user.setStatus(rs.getString("Status"));
+	           user.setName(rs.getString("Name"));
 	           list.add(user);
 	        }
 	        return list;
@@ -31,7 +35,7 @@ public class UserGet {
 	    
 	    public boolean checkEmail(String name) throws SQLException{
 	    Connection connection = ConnectToDatabase.getConnecttion();
-	    String sql = "SELECT * FROM users WHERE user_name = '" + name + "'";
+	    String sql = "SELECT * FROM uses WHERE UseName = '" + name + "'";
 	    PreparedStatement ps;
 	    try {
 	        ps = connection.prepareCall(sql);
@@ -45,17 +49,16 @@ public class UserGet {
 	    }
 	    return false;
 	    }
-	    public boolean insertUser(User u) {
+	    public boolean insertUser(User u) throws SQLException {
 	        Connection connection = ConnectToDatabase.getConnecttion();
-	        String sql = "INSERT INTO users VALUES(?,?,?,?,?,?)";
+	        String sql = "INSERT INTO uses VALUES(?,?,?,?,?)";
 	        try {
 	            PreparedStatement ps = connection.prepareCall(sql);
-	            ps.setLong(1, u.getUserID());
-	            ps.setString(2, u.getUserName());
-	            ps.setString(3, u.getUserEmail());
-	            ps.setString(4, u.getUserPass());
-	            ps.setBoolean(5, u.isUserRole());
-	            ps.setString(6, u.getUserPhone());
+	            ps.setLong(1, u.getIduse());
+	            ps.setString(2, u.getUsename());
+	            ps.setString(3, u.getMail());
+	            ps.setString(4, u.getPassword());
+	            ps.setString(5, u.getSdt());
 	            ps.executeUpdate();
 	            return true;
 	        } catch (SQLException ex) {
@@ -64,19 +67,18 @@ public class UserGet {
 	        return false;
 	    }
 	   
-	     public User login(String name, String password) {
+	     public User login(String name, String password) throws SQLException {
 	        Connection con = ConnectToDatabase.getConnecttion();
-	        String sql = "select * from users where user_name='" + name + "' and user_pass='" + password + "'";
+	        String sql = "select * from uses where UseName='" + name + "' and Password='" + password + "'";
 	        PreparedStatement ps;
 	        try {
 	            ps = (PreparedStatement) con.prepareStatement(sql);
 	            ResultSet rs = ps.executeQuery();
 	            if (rs.next()) {
 	                User u = new User();
-	                u.setUserID(rs.getLong("user_id"));
-	                u.setUsename(rs.getString("user_name"));
-	                u.setUserPass(rs.getString("user_pass"));
-	                u.setUserRole(rs.getBoolean("user_role"));
+	                u.setIduse(rs.getLong("IdUse"));
+	 	           	u.setUsename(rs.getString("UseName"));
+	                u.setPassword(rs.getString("Password"));
 	                con.close();
 	                return u;
 	            }
@@ -88,39 +90,39 @@ public class UserGet {
 	     
 	     public User getUser(long userID) throws SQLException {
 	     Connection connection = ConnectToDatabase.getConnecttion();
-	     String sql = "SELECT * FROM users WHERE user_id = '" + userID + "'";
+	     String sql = "SELECT * FROM uses WHERE IdUse = '" + userID + "'";
 	     PreparedStatement ps = connection.prepareCall(sql);
 	     ResultSet rs = ps.executeQuery();
 	     User user = new User();
 	     while (rs.next()) {
 	         
-	           user.setUserID(rs.getLong("user_id"));
-	           user.setUsename(rs.getString("user_name"));
-	           user.setMail(rs.getString("user_email"));
-	           user.setUserPass(rs.getString("user_pass"));
-	           user.setUserRole(rs.getBoolean("user_role"));
-	           user.setUserPhone(rs.getString("user_phone"));
+	          
+	           user.setIduse(rs.getLong("IdUse"));
+	           user.setUsename(rs.getString("UseName"));
+	           user.setMail(rs.getString("Mail"));
+	           user.setPassword(rs.getString("Password"));
+	           user.setSdt(rs.getString("SDT"));
+	           
 	     }
 	     return user;
 	}
-	     public boolean updateUser(User u) {
+	     public boolean updateUser(User u) throws SQLException {
 	        
 	        Connection connection = ConnectToDatabase.getConnecttion();
 	       // String sql = "UPDATE product SET product_id = ?, category_id = ?, product_name = ?, product_image = ?, product_image_forward = ?, product_image_back = ?, product_price = ?, product_description = ? WHERE product_id = ?";
-	        String sql = "UPDATE users SET user_id=?, user_name=?, user_email=?, user_pass=?, user_role=?, user_phone=? WHERE user_id = ?";
+	        String sql = "UPDATE uses SET IdUse=?, UseName=?, Mail=?, Password=?,  SDT=? WHERE IdUse = ?";
 	        
 	        try {
 	            PreparedStatement ps = connection.prepareCall(sql);
-	          ps.setLong(1, u.getUserID());
-	            ps.setString(2, u.getUserName());
-	            ps.setString(3, u.getUserEmail());
-	            ps.setString(4, u.getUserPass());
-	            ps.setBoolean(5, u.isUserRole());
-	            ps.setString(6, u.getUserPhone());
-	            ps.setLong(7, u.getUserID());
+	         	ps.setLong(1, u.getIduse());
+	            ps.setString(2, u.getUsename());
+	            ps.setString(3, u.getMail());
+	            ps.setString(4, u.getPassword());
+	            ps.setString(5, u.getSdt());
+	            ps.setLong(6, u.getIduse());
 	            return ps.executeUpdate() == 1;
 	        } catch (SQLException ex) {
-	            Logger.getLogger(ProductGet.class.getName()).log(Level.SEVERE, null, ex);
+	            Logger.getLogger(UserGet.class.getName()).log(Level.SEVERE, null, ex);
 	        }
 	        return false;
 	    }
