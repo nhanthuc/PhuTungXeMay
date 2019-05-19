@@ -11,11 +11,13 @@ public class Product {
 	private String status;
 	private long group_product_id;
 	private String detail;
+	private long companyid;
 	public Product() {
 		
 	}
+	
 	public Product(long id_sp, String nameproduct, double price, byte[] image, Date date, String status,
-			long group_product_id, String detail) {
+			long group_product_id, String detail, long companyid) {
 		super();
 		this.id_sp = id_sp;
 		this.nameproduct = nameproduct;
@@ -25,7 +27,9 @@ public class Product {
 		this.status = status;
 		this.group_product_id = group_product_id;
 		this.detail = detail;
+		this.companyid = companyid;
 	}
+
 	public long getId_sp() {
 		return id_sp;
 	}
@@ -73,6 +77,12 @@ public class Product {
 	}
 	public void setDetail(String detail) {
 		this.detail = detail;
+	}
+	public long getCompanyid() {
+		return companyid;
+	}
+	public void setCompanyid(long companyid) {
+		this.companyid = companyid;
 	}
 	
 	
