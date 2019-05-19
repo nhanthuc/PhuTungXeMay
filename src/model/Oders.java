@@ -51,5 +51,4 @@ public class Oders {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	private long ma_gio_hang;
 }
