@@ -1,6 +1,7 @@
 package model;
 
 public class Company {
+	private long id;
 	private String name;
 	private String address;
 	private String phone;
@@ -10,12 +11,23 @@ public class Company {
 	}
 	
 	
-	public Company(String name, String address, String phone, String fax) {
+	public Company(long id, String name, String address, String phone, String fax) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.address = address;
 		this.phone = phone;
 		this.fax = fax;
+	}
+
+
+	public long getId() {
+		return id;
+	}
+
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 
