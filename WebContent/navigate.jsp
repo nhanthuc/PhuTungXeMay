@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <body>
         <%
             User user = new User();
-            User users = (User) session.getAttribute("User");
+            User users = (User) session.getAttribute("user");
             if (users == null) {
                 response.sendRedirect("/PhuTungXeMay/login.jsp");
             }

@@ -11,7 +11,6 @@ public class ConnectToDatabase {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			String connURL="jdbc:sqlserver://DESKTOP-SR1RUQB:1433;databaseName=QUAN_LY_BAN_HANG;integratedSecurity=true";
 			conn=DriverManager.getConnection(connURL," sa","Abc12345");
-			System.out.println("ket noi thanh cong");
 			
 		} 
 		 catch (ClassNotFoundException e) {

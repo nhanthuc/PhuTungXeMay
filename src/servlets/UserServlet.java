@@ -3,6 +3,7 @@ package servlets;
 import java.io.IOException;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,6 +12,7 @@ import model.Gio_hang;
 import model.User;
 import get.UserGet;
 
+@WebServlet(urlPatterns = {"/UserServlet"})
 @SuppressWarnings("serial")
 public class UserServlet extends HttpServlet {
 
@@ -75,9 +77,11 @@ public class UserServlet extends HttpServlet {
                 if (users != null) {
                     session.setAttribute("user", users);
                     url = "/PhuTungXeMay/navigate.jsp";
+                    System.out.println("thanhconng");
                 } else {
                     request.setAttribute("error", "error!");
                     url = "/PhuTungXeMay/login.jsp";
+                    System.out.println("loi roi");
                 }
                 break;
 
