@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>CÁM ƠN BẠN - demo ACOUSTIC SHOP</title>
+        <title>CÁM ƠN BẠN - FI-PRO  SHOP</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Classic Style Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
          <div class="login">
 		<div class="container">
-         <h2>CÁM ƠN BẠN ĐÃ MUA HÀNG TẠI demo ACOUSTIC SHOP ^^</h2>
+         <h2>CÁM ƠN BẠN ĐÃ MUA HÀNG TẠI FI-PRO  SHOP ^^</h2>
          <br>
          <div class="page-header">
          <h3>Bạn Muốn Đi Đến ?</h3>
@@ -61,23 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          <div class="clearfix"> </div>
          
         
-        <div class="social animated wow fadeInUp" data-wow-delay=".1s">
-	<div class="container">
-		<div class="col-sm-3 social-ic">
-			<a href="#">FACEBOOK</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">TWITTER</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">GOOGLE+</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">PINTEREST</a>
-		</div>
-	<div class="clearfix"></div>
-	</div>
-</div>
+        
         <jsp:include page="footer.jsp"></jsp:include>
     </body>
 </html>

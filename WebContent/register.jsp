@@ -166,7 +166,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						 <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>Tôi đồng ý với các điều khoản.</label>
 	<fieldset disabled>
         <div class="form-group">
-          <label for="disabledTextInput">Điều khoản tại website demo ACOUSTIC SHOP</label>
+          <label for="disabledTextInput">Điều khoản tại website FI-PRO SHOP</label>
           <textarea type="text" id="disabledTextInput" class="form-control" placeholder="">* Mua hàng tại HAS không được đổi trả. &#10;* Bạn hãy chắc địa chỉ bạn gửi là đúng. &#10;* Sau 3 ngày không chuyển khoản, đơn hàng sẽ xóa.&#10;* Phải biết rằng admin cute phô mai que :3</textarea>
           </fieldset>
           
@@ -189,23 +189,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	</div>
         
-                <div class="social animated wow fadeInUp" data-wow-delay=".1s">
-	<div class="container">
-		<div class="col-sm-3 social-ic">
-			<a href="#">FACEBOOK</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">TWITTER</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">GOOGLE+</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">PINTEREST</a>
-		</div>
-	<div class="clearfix"></div>
-	</div>
-</div>
+               
         <jsp:include page="footer.jsp"></jsp:include>
     </body>
 </html>

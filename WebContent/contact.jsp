@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>LIÊN HỆ CHÚNG TÔI - demo ACOUSTIC SHOP</title>
+        <title>LIÊN HỆ CHÚNG TÔI - FI-PRO SHOP</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Classic Style Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-4 contact-grids">
 				<div class=" contact-grid animated wow fadeInLeft" data-wow-delay=".5s">
 					<div class="contact-grid1">
-						<div class="contact-grid2 ">
+						<div >
 							<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
 						</div>
 						<div class="contact-grid3">
@@ -101,23 +101,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class=" contact-grid animated wow fadeInUp" data-wow-delay=".5s">
 					<div class="contact-grid1">
-						<div class="contact-grid2 contact-grid4">
+						<div>
 							<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
 						</div>
-						<div class="contact-grid3">
+						<div >
 							<h4>Gọi Chúng Tôi</h4>
-							<p>093 5526 224<span>0168 784 1467 </span></p>
+							<p>0904929010</p>
 						</div>
 					</div>
 				</div>
 				<div class=" contact-grid animated wow fadeInRight" data-wow-delay=".5s">
 					<div class="contact-grid1">
-						<div class="contact-grid2 contact-grid5">
+						<div >
 							<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
 						</div>
 						<div class="contact-grid3">
 							<h4>Email</h4>
-							<p><a href="contactto:info@example.com">contact@demomusicshop.com</a><span><a href="contactto:info@example.com">lienhe@demomusicshop.com</a></span></p>
+							<p><a href="contactto:info@example.com">phutungxemay@gmail.com</a><span></span></p>
 						</div>
 					</div>
 				</div>
@@ -126,7 +126,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<div class="map">
-		<iframe class="animated wow fadeInLeft" data-wow-delay=".5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1423389315655!2d106.71431981431725!3d10.800408461705084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528afcee3d723%3A0x648fc24ef1c0146f!2zxJBp4buHbiBCacOqbiBQaOG7pywgUGjGsOG7nW5nIDI1LCBCw6xuaCBUaOG6oW5oLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sin!4v1490188237724" frameborder="0" style="border:0" allowfullscreen></iframe>	
+		<iframe class="animated wow fadeInLeft" data-wow-delay=".5s" src="" frameborder="0" style="border:0" allowfullscreen></iframe>	
         </div >
                 
          <div class="clearfix"> </div>

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>demo ACOUSTIC SHOP - THÔNG TIN ĐƠN PHẨM</title>
+<title>FI-PRO  SHOP - THÔNG TIN ĐƠN PHẨM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords"
@@ -412,23 +412,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="clearfix"></div>
 
 
-	<div class="social animated wow fadeInUp" data-wow-delay=".1s">
-		<div class="container">
-			<div class="col-sm-3 social-ic">
-				<a href="#">FACEBOOK</a>
-			</div>
-			<div class="col-sm-3 social-ic">
-				<a href="#">TWITTER</a>
-			</div>
-			<div class="col-sm-3 social-ic">
-				<a href="#">GOOGLE+</a>
-			</div>
-			<div class="col-sm-3 social-ic">
-				<a href="#">PINTEREST</a>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+	
 
 	<jsp:include page="footer.jsp"></jsp:include>
 	<script src="js/imagezoom.js"></script>

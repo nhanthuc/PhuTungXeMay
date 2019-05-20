@@ -2,11 +2,13 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="model.User"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>CHUYỂN HƯỚNG - demo ACOUSTIC SHOP</title>
+        <title>CHUYỂN HƯỚNG </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Classic Style Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -36,7 +38,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <
+        <%
+            User user = new User();
+            User users = (User) session.getAttribute("User");
+            if (users == null) {
+                response.sendRedirect("/PhuTungXeMay/login.jsp");
+            }
+  
+        %>
         <jsp:include page="header.jsp"></jsp:include>
          <div class="banner-top">
 	<div class="container">
@@ -74,21 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          
         
         <div class="social animated wow fadeInUp" data-wow-delay=".1s">
-	<div class="container">
-		<div class="col-sm-3 social-ic">
-			<a href="#">FACEBOOK</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">TWITTER</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">GOOGLE+</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">PINTEREST</a>
-		</div>
-	<div class="clearfix"></div>
-	</div>
+	
 </div>
         <jsp:include page="footer.jsp"></jsp:include>
     </body>

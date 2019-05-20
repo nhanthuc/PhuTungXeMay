@@ -728,7 +728,7 @@ em.item_price {
     width: 100%;
     height: 150px;
     display: block;
-    background: url(../images/back.jpg)no-repeat center;
+    background: url(../images/back.png)no-repeat center;
     padding: 3em 0;
     background-size: cover;
 }

@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>SẢN PHẨM THƯƠNG HIỆU - demo ACOUSTIC SHOP</title>
+        <title>Hãng Xe FI-PRO Shop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Classic Style Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        <div class="banner-top">
 	<div class="container">
 		<h2 class="animated wow fadeInLeft" data-wow-delay=".5s">Sản Phẩm</h2>
-		<h3 class="animated wow fadeInRight" data-wow-delay=".5s"><a href="index.html">Trang Chủ</a><label>/</label>Sản Phẩm<label>/</label>Nhạc Cụ</h3>
+		<h3 class="animated wow fadeInRight" data-wow-delay=".5s"><a href="index.html">Trang Chủ</a><label>/</label>Sản Phẩm<label></label></h3>
 		<div class="clearfix"> </div>
 	</div>
 </div>
@@ -147,9 +147,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="women">
 									<a href="#"><img src="" alt=""></a>
 									<h6><a href="single.jsp?productID="></a></h6>
-                                                                        <p ><em class="item_price">VNĐ</em></p>
-								
-                                                                        <a href="CartServlet?command=plus&productID=" data-text="Thêm vào giỏ" class="but-hover1 item_add">Thêm vào giỏ</a>
+                                    <p ><em class="item_price">VNĐ</em></p>
+                                    <a href="CartServlet?command=plus&productID=" data-text="Thêm vào giỏ" class="but-hover1 item_add">Thêm vào giỏ</a>
 								</div>
 							</div>
 						</div>
@@ -160,21 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		
 		<div class="clearfix"> </div>
 		<div class="social animated wow fadeInUp" data-wow-delay=".1s">
-	<div class="container">
-		<div class="col-sm-3 social-ic">
-			<a href="#">FACEBOOK</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">TWITTER</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">GOOGLE+</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">PINTEREST</a>
-		</div>
-        <div class="clearfix"></div>
-	</div>
+	
                             </div>	
         
         <jsp:include page="footer.jsp"></jsp:include>

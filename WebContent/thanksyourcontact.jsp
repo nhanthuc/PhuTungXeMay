@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>CÁM ƠN BẠN - demo ACOUSTIC SHOP</title>
+        <title>CÁM ƠN BẠN -FI-PRO  SHOP</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Classic Style Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -54,31 +54,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
       <p class="grid1">
           <a href="index.jsp"><button type="button" class="btn btn-lg btn-primary">Trang Chủ</button></a>
-          <a href="guitar.jsp"><button type="button" class="btn btn-lg btn-success">Guitar Shop</button></a>        
-        <a href="piano.jsp"><button type="button" class="btn btn-lg btn-warning">Piano Shop</button></a>
+          
          <div class="clearfix"> </div>
          </div>
 	</div> 
          <div class="clearfix"> </div>
          
         
-        <div class="social animated wow fadeInUp" data-wow-delay=".1s">
-	<div class="container">
-		<div class="col-sm-3 social-ic">
-			<a href="#">FACEBOOK</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">TWITTER</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">GOOGLE+</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">PINTEREST</a>
-		</div>
-	<div class="clearfix"></div>
-	</div>
-</div>
+      
         <jsp:include page="footer.jsp"></jsp:include>
     </body>
 </html>

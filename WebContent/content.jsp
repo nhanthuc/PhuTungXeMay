@@ -17,59 +17,33 @@
 					<div class="col-md-6 col-m1 animated wow fadeInLeft" data-wow-delay=".1s">
 						<div class="col-1">
 						<div class="col-md-6 col-2">
-							<a href="guitar.jsp"><img src="images/pi3.jpg" class="img-responsive" alt="">
+							<a href="dochoixemay.jsp"><img src="images/xedochoi.jpg" class="img-responsive" alt="">
 							</a></div>
 							<div class="col-md-6 col-p">
-								<h5>GUITAR SHOP</h5>
-								<p>Chúng tôi có rất nhiều những sản phẩm nổi tiếng từ các hãng lớn như Taylor, Fender, Yamaha, Gibson...</p>
-								<a href="guitar.jsp" class="shop" data-hover="Xem Ngay">Xem Ngay</a>
+								<h5>ĐỒ CHƠI XE MÁY</h5>
+								<p></p>
+								<a href="dochoixemay.jsp" class="shop" data-hover="Xem Ngay">Xem Ngay</a>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="col-1">
 						<div class="col-md-6 col-p">
-								<h5>PIANO SHOP</h5>
-								<p>Chúng tôi có rất nhiều những sản phẩm nổi tiếng từ các hãng lớn như Roland, Casio, Yamaha, Samick...</p>
+								<h5>PHỤ KIỆN CHO BIKER</h5>
+								<p></p>
 								<a href="piano.jsp" class="shop" data-hover="Xem Ngay">Xem Ngay</a>
 							</div>
 						<div class="col-md-6 col-2">
-							<a href="piano.jsp"><img src="images/pi.jpg" class="img-responsive" alt="">
+							<a href="piano.jsp"><img src="images/giapxemay.jpg" class="img-responsive" alt="">
 							</a></div>
 							<div class="clearfix"> </div>
 						</div>
 						</div>
+						
 					
 					<div class="col-md-6 col-m2 animated wow fadeInRight" data-wow-delay=".1s">
 					
-						<!---->
-						 <!-- requried-jsfiles-for owl -->
-							<link href="css/owl.carousel.css" rel="stylesheet">
-							    <script src="js/owl.carousel.js"></script>
-							        <script>
-									    $(document).ready(function() {
-									      $("#owl-demo").owlCarousel({
-									        items : 2,
-									        lazyLoad : false,
-									        autoPlay : true,
-									        navigation : true,
-									        navigationText :  true,
-									        pagination : false,
-									      });
-									    });
-									  </script>
-							 <!-- //requried-jsfiles-for owl -->
-							 <!-- start content_slider -->
-						       <div id="owl-demo" class="owl-carousel">
-                                   
-					                <div class="item">					                	 
-										  
-											<a href="single.jsp?productID="><img class="img-responsive" src="" alt="" /></a>  
-											<a href="single.jsp?productID=" class="shop-2" >Xem Ngay</a>
-								
-					                </div>
-                                                        
-									
-							</div>
+						
+						      
 					   </div>
 					   <div class="clearfix"></div>
 			</div>	
@@ -80,10 +54,10 @@
 				<div class="content-top">
 					<div class="col-md-5 col-md1 animated wow fadeInLeft" data-wow-delay=".1s">
 						<div class="col-3">
-							<a href="guitar.jsp"><img src="images/pi1.jpg" class="img-responsive " alt="">
+							<a href="guitar.jsp"><img src="" class="img-responsive " alt="">
 							<div class="col-pic">	
-								<h5> Guitar - Ukulele</h5>
-								<p>Kiểu dáng hiện đại</p>
+								<h5> </h5>
+								<p></p>
 							</div></a>
 						</div>
 						
@@ -151,10 +125,10 @@
 					</div>
 					<div class="col-md-5 col-md1 animated wow fadeInRight" data-wow-delay=".1s">
 						<div class="col-3">
-							<a href="piano.jsp"><img src="images/pi2.jpg" class="img-responsive " alt="">
+							<a href="piano.jsp"><img src="" class="img-responsive " alt="">
 							<div class="col-pic">
-								<h5>Piano - Organ</h5>
-								<p>Âm thanh ấn tượng</p>
+								<h5></h5>
+								<p></p>
 							</div></a>
 						</div>
 						
