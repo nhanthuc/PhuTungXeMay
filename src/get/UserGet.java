@@ -51,15 +51,12 @@ public class UserGet {
 	    }
 	    public boolean insertUser(User u) throws SQLException {
 	        Connection connection = ConnectToDatabase.getConnecttion();
-	        String sql = "INSERT INTO uses VALUES(?,?,?,?,?)";
+	        String sql = "INSERT INTO Uses (IdUse) VALUES(?)";
 	        try {
 	            PreparedStatement ps = connection.prepareCall(sql);
 	            ps.setLong(1, u.getIduse());
-	            ps.setString(2, u.getUsename());
-	            ps.setString(3, u.getMail());
-	            ps.setString(4, u.getPassword());
-	            ps.setString(5, u.getSdt());
 	            ps.executeUpdate();
+	            updateUser(u);
 	            return true;
 	        } catch (SQLException ex) {
 	            Logger.getLogger(UserGet.class.getName()).log(Level.SEVERE, null, ex);
@@ -110,16 +107,19 @@ public class UserGet {
 	        
 	        Connection connection = ConnectToDatabase.getConnecttion();
 	       // String sql = "UPDATE product SET product_id = ?, category_id = ?, product_name = ?, product_image = ?, product_image_forward = ?, product_image_back = ?, product_price = ?, product_description = ? WHERE product_id = ?";
-	        String sql = "UPDATE uses SET IdUse=?, UseName=?, Mail=?, Password=?,  SDT=? WHERE IdUse = ?";
+	        String sql = "UPDATE Uses SET Name=?, UseName=?, Password=?, Status=?,Gioi_tinh=?, Dia_Chi=? SDT=?, Mail=?, WHERE IdUse = ?";
 	        
 	        try {
 	            PreparedStatement ps = connection.prepareCall(sql);
-	         	ps.setLong(1, u.getIduse());
+	            ps.setString(1, u.getName());
 	            ps.setString(2, u.getUsename());
-	            ps.setString(3, u.getMail());
-	            ps.setString(4, u.getPassword());
-	            ps.setString(5, u.getSdt());
-	            ps.setLong(6, u.getIduse());
+	            ps.setString(3, u.getPassword());
+	            ps.setString(4, u.getStatus());
+	            ps.setString(5, u.getGioitinh());
+	            ps.setString(6, u.getDia_chi());
+	            ps.setString(7, u.getSdt());
+	            ps.setString(8, u.getMail());
+	            ps.setLong(9, u.getIduse());
 	            return ps.executeUpdate() == 1;
 	        } catch (SQLException ex) {
 	            Logger.getLogger(UserGet.class.getName()).log(Level.SEVERE, null, ex);
